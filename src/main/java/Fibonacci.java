@@ -15,4 +15,7 @@ public class Fibonacci {
             return b;
         }
     }
+    public static void main(String[] args){
+        System.out.println(fib(2));
+    }
 }
