@@ -1,8 +1,7 @@
 import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
+
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThrows;
 
 public class MainTest {
 
@@ -22,30 +21,31 @@ public class MainTest {
     @Test
     public void testFibonacciWithZero() {
         int result = Fibonacci.fib(0);
-        Assertions.assertEquals(0, result);
+        assertEquals(0, result);
     }
 
     @Test
     public  void testFibonacciWithPositiveNumber() {
         int result = Fibonacci.fib(5);
-        Assertions.assertEquals(5, result);
+        assertEquals(5, result);
     }
 
     @Test
     public void testFibonacciWithNegativeNumber() {
         int result = Fibonacci.fib(-3);
-        Assertions.assertEquals(0, result);
+        assertEquals(0, result);
     }
 
     @Test
     public void testFibonacciWithLargeNumber() {
         int result = Fibonacci.fib(10);
-        Assertions.assertEquals(55, result);
+        assertEquals(55, result);
     }
 
     @Test
     public void testFibonacciWithOne() {
         int result = Fibonacci.fib(1);
-        Assertions.assertEquals(1, result);
+       assertEquals(1, result);
     }
+
 }
